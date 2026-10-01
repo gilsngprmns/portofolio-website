@@ -214,7 +214,7 @@ const projects = [
     approach: 'I built a responsive interface with custom typography, paper texture, technology logos, motion interactions, and reusable project showcases.',
     architecture: ['React application with Vite', 'Responsive layouts for desktop and mobile', 'Reusable project and technology components', 'Project routing and detail pages'],
     responsibilities: ['Visual identity and typography', 'Responsive frontend development', 'Project showcase and detail content', 'Motion and technology logo treatments'],
-    github: null,
+    github: 'https://github.com/gilsngprmns/portofolio-website',
     live: null,
   },
 ];
