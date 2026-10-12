@@ -1,6 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import profilePhoto from '../asset/new profile.png';
-import paperTextureVideo from '../asset/bg video.mp4';
 import aiProjectImage from '../asset/Admin Signal ai.png';
 import aiGalleryImage from '../asset/Signal-AI-09-30-2026_11_21_PM.png';
 import archiveProjectImage from '../asset/admin document archive.png';
@@ -337,7 +336,7 @@ function ProjectCard({ project, navigate, compact = false }) {
     <article className={`project-card${compact ? ' project-card--compact' : ' project-card--wide'}${infrastructureClass}`}>
       <AppLink href={`/projects/${project.slug}`} navigate={navigate} className="project-card__image-link" aria-label={`Open ${project.title}`}>
         {project.image ? (
-          <img className="project-card__image" src={project.image} alt={`${project.title} interface`} loading="lazy" />
+          <img className="project-card__image" src={project.image} alt={`${project.title} interface`} loading="lazy" decoding="async" />
         ) : (
           <div className="project-card__image project-card__image--empty"><span>{project.category === 'Infrastructure' ? 'Mail systems / Archive / Backup' : `${project.title} / Overview / Services`}</span></div>
         )}
@@ -451,7 +450,7 @@ function HomePage({ navigate }) {
           </div>
         </div>
         <div className="home-hero__visual">
-          <img className="home-portrait" src={profilePhoto} alt="Gilang Riski Permana" />
+          <img className="home-portrait" src={profilePhoto} alt="Gilang Riski Permana" decoding="async" />
         </div>
       </section>
 
@@ -581,7 +580,7 @@ function AboutPage() {
           <p className="editorial-copy__closing">Still learning. Still building.</p>
         </div>
         <aside className="about-focus">
-          <img className="about-focus__portrait" src={profilePhoto} alt="Gilang Riski Permana" loading="lazy" />
+          <img className="about-focus__portrait" src={profilePhoto} alt="Gilang Riski Permana" loading="lazy" decoding="async" />
           <div><p className="eyebrow">Current focus</p><strong>Backend development, system design, and understanding how each part fits together.</strong></div>
         </aside>
       </div>
@@ -644,40 +643,19 @@ function PageContent({ path, navigate }) {
 
 export default function PortfolioApp() {
   const [path, setPath] = useState(() => normalizePath(window.location.pathname));
-  const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const paperVideoRef = useRef(null);
 
   useEffect(() => {
     const onPopState = () => setPath(normalizePath(window.location.pathname));
-    const onScroll = () => setIsScrolled(window.scrollY > 12);
     const onKeyDown = (event) => {
       if (event.key === 'Escape') setMobileMenuOpen(false);
     };
     window.addEventListener('popstate', onPopState);
-    window.addEventListener('scroll', onScroll);
     window.addEventListener('keydown', onKeyDown);
     return () => {
       window.removeEventListener('popstate', onPopState);
-      window.removeEventListener('scroll', onScroll);
       window.removeEventListener('keydown', onKeyDown);
     };
-  }, []);
-
-  useEffect(() => {
-    const video = paperVideoRef.current;
-    const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const syncPlayback = () => {
-      if (motionPreference.matches) {
-        video.pause();
-        return;
-      }
-      video.play().catch(() => {});
-    };
-
-    syncPlayback();
-    motionPreference.addEventListener('change', syncPlayback);
-    return () => motionPreference.removeEventListener('change', syncPlayback);
   }, []);
 
   useEffect(() => {
@@ -698,8 +676,7 @@ export default function PortfolioApp() {
 
   return (
     <div className="portfolio-site">
-      <video ref={paperVideoRef} className="paper-texture-video" src={paperTextureVideo} muted loop playsInline preload="metadata" aria-hidden="true" tabIndex={-1} />
-      <header className={`site-nav${isScrolled ? ' site-nav--scrolled' : ''}`}>
+      <header className="site-nav">
         <div className="portfolio-container site-nav__inner">
           <nav className={`site-nav__links${mobileMenuOpen ? ' is-open' : ''}`} aria-label="Main navigation">
             {navigation.map((item) => <AppLink key={item.href} href={item.href} navigate={navigate} className={`site-nav__link${path === item.href || (item.href === '/projects' && path.startsWith('/projects/')) ? ' is-active' : ''}`}>{item.label}</AppLink>)}
