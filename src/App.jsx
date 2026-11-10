@@ -158,6 +158,7 @@ const projects = [
   },
 ];
 
+
 const capabilityData = [
   {
     title: 'Web Development',
@@ -274,6 +275,9 @@ function IconButton({ type }) {
         <path d="M9 19c-4.3 1.3-4.3-2.6-6-3M15 22v-3.9c0-1.1.3-1.7 1.1-2.6 3.7-1.3 6.3-5.1 6.3-9.3 0-2.1-.8-4.1-2.2-5.6A7.7 7.7 0 0 0 16.2 1a7.5 7.5 0 0 0-5.4 2.4A7.8 7.8 0 0 0 8.9 7.3c0 4.2 2.6 8 6.3 9.3.8.9 1.1 1.5 1.1 2.6V22" />
       </svg>
     );
+  }
+  else{
+    
   }
 
   if (type === 'linkedin') {
