@@ -26,23 +26,22 @@ const projects = [
   {
     slug: 'document-archive',
     title: 'Document Archive Management System',
-    subtitle: 'Administrative Document Archiving',
     category: 'Development',
     categoryLabel: 'Full-Stack Development',
-    description: 'A web-based archive for administrative use in a local government office, organizing digital documents across departments with centralized search, filters, and record management.',
+    description: 'A web app for organizing administrative records across departments, with search, filters, and simple record management.',
     role: 'Full-Stack Development',
     image: archiveProjectImage,
     gallery: [archiveUserImage],
     technologies: ['React.js', 'Vite', 'Node.js', 'Express.js', 'PostgreSQL'],
     tools: ['Git', 'GitHub', 'VS Code', 'npm', 'REST API', 'Vercel', 'Supabase'],
-    overview: 'A web-based document archiving system for administrative use in a local government office.',
-    context: 'The system organizes digital documents across multiple organizational sections through a centralized interface.',
-    problem: 'Archived records need consistent departmental structure and practical tools for searching, filtering, and maintenance.',
-    approach: 'I designed the frontend and backend as separate parts so the interface, API, database, and future document storage can be maintained independently.',
-    architecture: ['React.js and Vite frontend', 'Node.js and Express.js API', 'PostgreSQL records and metadata', 'Separate layers for future document storage'],
-    responsibilities: ['Document categorization and archive management', 'Authentication and CRUD operations', 'Search, filtering, and departmental access'],
-    challenges: ['Keeping the category structure easy to navigate', 'Making the data model flexible without overcomplicating the workflow'],
-    learning: 'This project made me think more about how people actually retrieve information. A useful archive depends on its data structure just as much as its interface.',
+    overview: 'A shared place for staff to file, find, and manage administrative documents.',
+    context: 'Staff work across different departments, so records needed a clear home and a consistent way to find them.',
+    problem: 'Files are harder to manage when every department follows a different structure. Search and routine updates also need to be straightforward.',
+    approach: 'I kept the interface and API separate, with PostgreSQL storing document details. That makes each part easier to maintain and leaves room for dedicated file storage later.',
+    architecture: ['React interface, built with Vite', 'Node.js and Express API', 'PostgreSQL for document records and metadata', 'A separate layer for future file storage'],
+    responsibilities: ['Organizing records by department and category', 'Sign-in and record management', 'Searching and filtering the archive'],
+    challenges: ['Keeping navigation clear as categories grow', 'Leaving room to expand the data model without adding unnecessary complexity'],
+    learning: 'I learned that a useful archive depends as much on how its records are organized as on the interface people use to find them.',
     github: 'https://github.com/gilsngprmns/dokumen-arsip',
     live: null,
   },
@@ -53,7 +52,7 @@ const projects = [
     category: 'Development',
     categoryLabel: 'Full-Stack Development',
     organization: 'Kelurahan Grogol Selatan',
-    description: 'A web-based document archiving system for managing administrative files in a structured, centralized workflow.',
+    description: 'A document archive for day-to-day administrative work at Kelurahan Grogol Selatan.',
     role: 'Full-Stack Development · Practical Work',
     image: grogolArchiveImage,
     technologies: ['Laravel', 'Vue.js', 'PHP', 'JavaScript', 'MySQL', 'HTML', 'CSS'],
@@ -72,7 +71,7 @@ const projects = [
     title: 'AI Knowledge Base / Conversational AI Assistant',
     category: 'AI',
     categoryLabel: 'AI Integration / Full Stack',
-    description: 'A full-stack conversational AI assistant that began as a RAG knowledge base and evolved into a domain-focused assistant for IT and music discussions.',
+    description: 'A chat assistant for IT and music discussions, built from an early experiment with retrieval-augmented generation.',
     role: 'Full-Stack Development & AI Integration',
     image: aiProjectImage,
     gallery: [aiGalleryImage],
@@ -100,7 +99,7 @@ const projects = [
     title: 'SOSMED MUSICIAN',
     category: 'Development',
     categoryLabel: 'Mobile / Social Platform',
-    description: 'A mobile-first social platform foundation for independent musicians and emerging artists, combining music discovery with community features.',
+    description: 'A social platform concept where independent musicians can share work and find a community.',
     role: 'Full-Stack Development',
     technologies: ['NestJS', 'React Native', 'Expo Router', 'PostgreSQL', 'Prisma', 'TypeScript'],
     tools: ['pnpm Workspace', 'Node.js', 'Git', 'GitHub', 'VS Code', 'Prisma ORM', 'Expo', 'REST API', 'Figma'],
@@ -110,7 +109,7 @@ const projects = [
     approach: 'I designed the foundation as a mobile-first application with a monorepo architecture, a dedicated backend API, and a cross-platform client.',
     architecture: ['NestJS backend API', 'React Native cross-platform client', 'Expo Router navigation', 'PostgreSQL data with Prisma ORM', 'pnpm workspace monorepo'],
     responsibilities: ['Customizable artist profiles', 'Music upload and discovery', 'Comments and ratings', 'Artist interactions and audience building'],
-    github: 'https://github.com/gilsngprmns/HRIS-SYSTEM-GOLANG-',
+    github: null,
     live: null,
   },
   {
@@ -118,7 +117,7 @@ const projects = [
     title: 'HRIS – Human Resources Information System',
     category: 'Development',
     categoryLabel: 'Full-Stack Development',
-    description: 'An HR system for centralized employee administration, attendance, leave requests, payroll, and performance management.',
+    description: 'An HR system for employee records, attendance, leave, payroll, and performance reviews.',
     role: 'Full-Stack Development',
     image: hrisApiImage,
     technologies: ['Go', 'Gin', 'GORM', 'PostgreSQL', 'React.js', 'Vite'],
@@ -137,7 +136,7 @@ const projects = [
     title: 'Zouthern Hemisphere – Official Merchandise Store',
     category: 'Development',
     categoryLabel: 'E-commerce Development',
-    description: 'An e-commerce website for an independent merchandise brand, with customer shopping flows and centralized product and order administration.',
+    description: 'An online shop for Zouthern Hemisphere, with product, stock, and order management.',
     role: 'Full-Stack Web Development',
     image: zouthernShopfrontImage,
     technologies: ['PHP', 'MySQL', 'Bootstrap 5', 'HTML', 'CSS', 'JavaScript'],
@@ -157,7 +156,7 @@ const projects = [
     category: 'Infrastructure',
     categoryLabel: 'IT Infrastructure & Mail Systems',
     organization: 'PT Veddira & Artha',
-    description: 'Email archiving and migration using Outlook, cPanel, DNS configuration, scheduled PowerShell backup, and Remote Desktop access to the mail server.',
+    description: 'Email archiving and migration work covering Outlook, scheduled backups, DNS, and mail-server access.',
     role: 'Email Migration & IT Infrastructure',
     image: outlookProjectImage,
     technologies: ['Microsoft Outlook', 'cPanel', 'PowerShell', 'PST Archiving', 'MailStore', 'Synology NAS', 'SMTP', 'IMAP', 'DNS', 'SPF', 'DKIM', 'DMARC', 'Virtual Machines', 'Mail Server', 'Networking'],
@@ -183,7 +182,7 @@ const projects = [
     title: 'ARMADA Digital Company Profile',
     category: 'Development',
     categoryLabel: 'Web Design / Brand Implementation',
-    description: 'Designed and developed the visual concept for a responsive company profile for a logistics company, presenting its services through ARMADA’s visual identity.',
+    description: 'A responsive company profile concept presenting ARMADA’s logistics services and visual identity.',
     role: 'Company Profile Website',
     image: companyProfileImage,
     technologies: ['HTML/CSS Concepts', 'Responsive Design'],
@@ -202,7 +201,7 @@ const projects = [
     title: 'Personal Portfolio Website',
     category: 'Development',
     categoryLabel: 'Web Development / Visual Design',
-    description: 'A responsive portfolio presenting software development, AI, infrastructure, system analysis, and design work in one cohesive visual identity.',
+    description: 'A portfolio for my software, infrastructure, and design projects.',
     role: 'Design & Development',
     image: portfolioWebsiteImage,
     technologies: ['React.js', 'Vite', 'JavaScript', 'HTML', 'CSS'],
@@ -210,7 +209,7 @@ const projects = [
     overview: 'A personal portfolio website for presenting development, AI, infrastructure, system analysis, and design projects.',
     context: 'The site was designed to feel personal and editorial rather than relying on a generic portfolio template.',
     problem: 'Projects across several technical disciplines needed to be presented with a cohesive identity across desktop and mobile.',
-    approach: 'I built a responsive interface with custom typography, paper texture, technology logos, motion interactions, and reusable project showcases.',
+    approach: 'I built a responsive portfolio with a consistent visual style, restrained motion, and reusable project pages.',
     architecture: ['React application with Vite', 'Responsive layouts for desktop and mobile', 'Reusable project and technology components', 'Project routing and detail pages'],
     responsibilities: ['Visual identity and typography', 'Responsive frontend development', 'Project showcase and detail content', 'Motion and technology logo treatments'],
     github: 'https://github.com/gilsngprmns/portofolio-website',
@@ -220,6 +219,7 @@ const projects = [
 
 const primaryTechnologies = [
   { name: 'JavaScript', slug: 'javascript', color: 'F7DF1E', state: 'Using' },
+  { name: 'TypeScript', slug: 'typescript', color: '3178C6', state: 'Using' },
   { name: 'React', slug: 'react', color: '61DAFB', state: 'Using' },
   { name: 'Node.js', slug: 'nodedotjs', color: '5FA04E', state: 'Using' },
   { name: 'Express.js', slug: 'express', color: '181717', state: 'Using' },
@@ -281,19 +281,9 @@ function getStackTechnology(name) {
   return { name, slug, color, state: 'Worked With' };
 }
 
-function getProjectLogoTechnology(name) {
-  const currentTechnology = primaryTechnologies.find((technology) => technology.name === name);
-  if (currentTechnology) return currentTechnology;
-  const color = technologyColors[name];
-  return color ? { name, slug: color[0], color: color[1], state: 'Worked With' } : null;
-}
-
 const experience = [
-  { title: 'IT Support & Infrastructure', detail: 'Supporting everyday technical needs involving hardware, software, networks, email, and internal users.' },
-  { title: 'Email Systems', detail: 'Working with SMTP, IMAP, hosting configuration, mailbox testing, and deliverability troubleshooting.' },
-  { title: 'Email Migration', detail: 'Planning and testing mailbox migrations while keeping historical email accessible.' },
-  { title: 'Backup Architecture', detail: 'Working on archive and backup workflows between user laptops, Outlook PST files, internal servers, and company storage.' },
-  { title: 'System Documentation', detail: 'Documenting technical processes, workflows, and system requirements so they are easier to understand and maintain.' },
+  { organization: 'PT Armada Logistik', title: 'IT Intern', detail: 'Helped with email and day-to-day IT tasks, worked on the company profile, and tested applications for issues.' },
+  { organization: 'Academic & independent projects', title: 'Software development', detail: 'Built applications and system prototypes across full-stack development, AI integration, and infrastructure.' },
 ];
 
 function normalizePath(path) {
@@ -320,25 +310,25 @@ function AppLink({ href, navigate, className = '', children, ...props }) {
 
 function PageHeading({ eyebrow, title, description }) {
   return (
-    <header className="page-heading">
-      <p className="eyebrow">{eyebrow}</p>
-      <h1>{title}</h1>
-      {description && <p className="page-description">{description}</p>}
+    <header className="page-heading" data-reveal>
+      <div className="portfolio-container page-heading__inner">
+        <p className="eyebrow">{eyebrow}</p>
+        <h1>{title}</h1>
+        {description && <p className="page-description">{description}</p>}
+      </div>
     </header>
   );
 }
 
-function ProjectCard({ project, navigate, compact = false }) {
+function ProjectCard({ project, navigate, compact = false, editorial = false }) {
   const infrastructureClass = project.category === 'Infrastructure' ? ' project-card--infrastructure' : '';
-  const projectTechnologyNames = [...new Set([...(project.technologies ?? []), ...(project.tools ?? [])])];
-  const logoTechnologies = projectTechnologyNames.map(getProjectLogoTechnology).filter(Boolean).slice(0, 6);
   return (
-    <article className={`project-card${compact ? ' project-card--compact' : ' project-card--wide'}${infrastructureClass}`}>
+    <article data-reveal className={`project-card${compact ? ' project-card--compact' : ' project-card--wide'}${infrastructureClass}${editorial ? ' project-card--editorial' : ''}`}>
       <AppLink href={`/projects/${project.slug}`} navigate={navigate} className="project-card__image-link" aria-label={`Open ${project.title}`}>
         {project.image ? (
-          <img className="project-card__image" src={project.image} alt={`${project.title} interface`} loading="lazy" decoding="async" />
+          <img className="project-card__image" src={project.image} alt={`${project.title} project preview`} loading="lazy" decoding="async" />
         ) : (
-          <div className="project-card__image project-card__image--empty"><span>{project.category === 'Infrastructure' ? 'Mail systems / Archive / Backup' : `${project.title} / Overview / Services`}</span></div>
+          <div className="project-card__image project-card__image--empty"><span>Project screenshot unavailable</span></div>
         )}
         {project.isLive && <span className="project-card__live">Live</span>}
       </AppLink>
@@ -346,9 +336,6 @@ function ProjectCard({ project, navigate, compact = false }) {
         <p className="project-card__category">{project.categoryLabel}</p>
         <h2><AppLink href={`/projects/${project.slug}`} navigate={navigate}>{project.title}</AppLink></h2>
         <p>{project.description}</p>
-        {logoTechnologies.length > 0 && <div className="project-tech-logos" role="img" aria-label={`Technologies and tools: ${projectTechnologyNames.join(', ')}`}>
-          {logoTechnologies.map((technology) => <TechLogo key={technology.name} technology={technology} />)}
-        </div>}
         <div className="project-card__actions">
           <AppLink href={`/projects/${project.slug}`} navigate={navigate} className="text-link">
             {project.category === 'Infrastructure' ? 'View case study' : 'View project'}
@@ -368,7 +355,7 @@ function TechLogo({ technology }) {
       {technology.slug === 'linkedin' ? (
         <svg viewBox="0 0 24 24" focusable="false">
           <rect x="1" y="1" width="22" height="22" rx="4" />
-          <text x="12" y="17" fill="#F1EFE8" fontFamily="Inter, sans-serif" fontSize="12" fontWeight="700" textAnchor="middle">in</text>
+          <text x="12" y="17" fill="#F1EFE8" fontFamily="DM Sans, sans-serif" fontSize="12" fontWeight="700" textAnchor="middle">in</text>
         </svg>
       ) : technology.slug === 'outlook-local' ? (
         <svg viewBox="0 0 32 32" focusable="false">
@@ -376,7 +363,7 @@ function TechLogo({ technology }) {
           <path d="M7 10l10 8 10-8v14H7z" fill="#F7FBFF" />
           <path d="M7 10l10 8 10-8" fill="none" stroke="#0078D4" strokeWidth="1.8" />
           <rect x="2" y="9" width="13" height="14" rx="2" fill="#005A9E" />
-          <text x="8.5" y="19" fill="#FFFFFF" fontFamily="Inter, sans-serif" fontSize="9" fontWeight="700" textAnchor="middle">O</text>
+          <text x="8.5" y="19" fill="#FFFFFF" fontFamily="DM Sans, sans-serif" fontSize="9" fontWeight="700" textAnchor="middle">O</text>
         </svg>
       ) : technology.slug === 'powershell-local' ? (
         <svg viewBox="0 0 32 32" focusable="false">
@@ -405,78 +392,54 @@ function TechCard({ technology, bubble = false }) {
       <TechLogo technology={technology} />
       <div className="tech-card__copy">
         <strong>{technology.name}</strong>
-        <small>{technology.state}</small>
       </div>
     </article>
-  );
-}
-
-function ToolsStrip() {
-  return (
-    <section className="tools-strip portfolio-container" aria-label="Tools and technologies">
-      <div className="tools-marquee" role="region" aria-label="Technologies I use">
-        <div className="tools-marquee__track">
-          {[0, 1].map((copy) => (
-            <div className="tools-marquee__group" key={copy} aria-hidden={copy === 1}>
-              {primaryTechnologies.map((technology) => (
-                <div className="tool-item" key={technology.name}>
-                  <TechLogo technology={technology} />
-                  <span>{technology.name}</span>
-                </div>
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
   );
 }
 
 function HomePage({ navigate }) {
   return (
     <main className="home-page">
-      <section className="home-hero portfolio-container">
+      <section className="home-hero">
         <div className="home-hero__copy">
           <p className="eyebrow">Information Systems student / Jakarta, Indonesia</p>
           <h1 className="hero-wordmark">
             <span>Gilang</span>
-            <span>Permana</span>
+            <span className="hero-wordmark__outline">Permana</span>
           </h1>
-          <h2>I build systems that are useful, clear, and genuinely made for the people using them.</h2>
-          <p className="home-hero__paragraph">I’m Gilang, a final-year Information Systems student focused on product thinking, backend development, AI integration, and infrastructure. I like building interfaces that make technical systems easier to understand.</p>
+          <h2>I like making software that makes everyday work easier.</h2>
+          <p className="home-hero__paragraph">I&apos;m Gilang, an Information Systems student in Jakarta. I build web applications and keep learning how the systems behind them fit together.</p>
           <div className="action-row">
-            <AppLink href="/projects" navigate={navigate} className="button button--primary">View selected work</AppLink>
-            <AppLink href="/about" navigate={navigate} className="button button--secondary">About me</AppLink>
+            <AppLink href="/projects" navigate={navigate} className="button button--primary">See my work</AppLink>
+            <AppLink href="/about" navigate={navigate} className="button button--secondary">A little about me</AppLink>
           </div>
         </div>
         <div className="home-hero__visual">
-          <img className="home-portrait" src={profilePhoto} alt="Gilang Riski Permana" decoding="async" />
+          <img className="home-portrait" src={profilePhoto} alt="Gilang Riski Permana" width="1024" height="1536" fetchpriority="high" decoding="async" />
         </div>
       </section>
 
-      <ToolsStrip />
-
-      <section className="home-section portfolio-container">
+      <section className="home-section portfolio-container" data-reveal>
         <div className="section-heading-row">
-          <div><p className="eyebrow">Selected work</p><h2>Projects that reflect how I think.</h2></div>
-          <p>Small systems, backend work, infrastructure problems, and experiments that taught me something useful.</p>
+          <div><p className="eyebrow">Selected work</p><h2>A few things I&apos;ve been working on.</h2></div>
+          <p>From organizing documents to exploring AI, each project has taught me something different.</p>
         </div>
-        <div className="project-grid project-grid--home">
-          {projects.slice(0, 3).map((project) => <ProjectCard key={project.slug} project={project} navigate={navigate} compact />)}
+        <div className="project-editorial">
+          {projects.slice(0, 3).map((project) => <ProjectCard key={project.slug} project={project} navigate={navigate} editorial />)}
         </div>
-        <AppLink href="/projects" navigate={navigate} className="section-more">See all projects</AppLink>
+        <AppLink href="/projects" navigate={navigate} className="section-more">All projects</AppLink>
       </section>
 
-      <section className="home-about portfolio-container">
-        <div><p className="eyebrow">About</p><h2>I like seeing how the pieces connect: interface, backend, data, and real user needs.</h2></div>
-        <div><p>Frontend, backend, databases, deployment, and infrastructure all matter to me because they shape how a system actually works for people.</p><AppLink href="/about" navigate={navigate} className="text-link">Read more</AppLink></div>
+      <section className="home-about portfolio-container" data-reveal>
+        <div><p className="eyebrow">About</p><h2>I like seeing how the pieces fit together.</h2></div>
+        <div><p>I move between interfaces, APIs, databases, and deployment. I enjoy figuring out how the decisions behind a product affect the people who use it.</p><AppLink href="/about" navigate={navigate} className="text-link">More about me</AppLink></div>
       </section>
 
-      <section className="home-cta portfolio-container">
+      <section className="home-cta portfolio-container" data-reveal>
         <p className="eyebrow">Contact</p>
-        <h2>Open to work, ideas, and good conversations.</h2>
-        <p>I’m happy to talk about building products, learning more about systems, internships, or practical opportunities to work on something real.</p>
-        <AppLink href="/contact" navigate={navigate} className="button button--primary">Get in touch</AppLink>
+        <h2>Have something useful to build?</h2>
+        <p>I&apos;m open to internships, collaborations, and practical software projects. Tell me a little about what you have in mind.</p>
+        <AppLink href="/contact" navigate={navigate} className="button button--primary">Contact me</AppLink>
       </section>
     </main>
   );
@@ -487,13 +450,15 @@ function ProjectsPage({ navigate }) {
   const filters = ['All', 'Development', 'AI', 'Infrastructure'];
   const filteredProjects = projects.filter((project) => filter === 'All' || project.category === filter);
   return (
-    <main className="page-content portfolio-container">
-      <PageHeading eyebrow="Projects" title="Things I’ve built, explored, and worked on." description="Some are development projects, some are infrastructure work, and some are experiments that helped me understand technology better." />
-      <div className="filter-row" role="group" aria-label="Filter projects">
-        {filters.map((item) => <button key={item} type="button" className={`filter-button${filter === item ? ' is-active' : ''}`} onClick={() => setFilter(item)}>{item}</button>)}
-      </div>
-      <div className="project-grid project-grid--listing">
-        {filteredProjects.length ? filteredProjects.map((project) => <ProjectCard key={project.slug} project={project} navigate={navigate} />) : <p className="empty-state">No projects in this category yet.</p>}
+    <main className="page-content">
+      <PageHeading eyebrow="Projects" title="A mix of projects and practical work." description="From web apps to infrastructure, here are projects I’ve worked on and a few things I learned along the way." />
+      <div className="portfolio-container page-content__body">
+        <div className="filter-row" role="group" aria-label="Filter projects">
+          {filters.map((item) => <button key={item} type="button" className={`filter-button${filter === item ? ' is-active' : ''}`} aria-pressed={filter === item} onClick={() => setFilter(item)}>{item}</button>)}
+        </div>
+        <div className="project-grid project-grid--listing">
+          {filteredProjects.length ? filteredProjects.map((project) => <ProjectCard key={project.slug} project={project} navigate={navigate} editorial />) : <p className="empty-state">No projects in this category yet.</p>}
+        </div>
       </div>
     </main>
   );
@@ -504,27 +469,27 @@ function ProjectDetailPage({ project, navigate }) {
   const isAiProject = project.slug === 'ai-knowledge-base';
   const isEmailProject = project.slug === 'email-migration';
   return (
-    <main className="page-content portfolio-container case-study">
-      <AppLink href="/projects" navigate={navigate} className="back-link">All projects</AppLink>
+    <main className="page-content case-study">
       <header className="case-study__hero">
-        <p className="eyebrow">{project.categoryLabel}</p>
-        <h1>{project.title}</h1>
-        {project.subtitle && <p className="case-study__subtitle">{project.subtitle}</p>}
-        <p className="case-study__role">{project.organization ? `${project.organization} · ` : ''}{project.role}</p>
-        {project.deployment && <p className="case-study__role">Deployment: {project.deployment}</p>}
-        {project.technologies.length > 0 && <div className="tag-list">{project.technologies.map((technology) => <span key={technology} className="tag">{technology}</span>)}</div>}
-        {project.tools?.length > 0 && <section className="case-study__tools"><p className="eyebrow">Tools &amp; Technologies</p><div className="tag-list">{project.tools.map((tool) => <span key={tool} className="tag">{tool}</span>)}</div></section>}
-        {project.image && !isEmailProject && <figure className="case-study__cover" id="case-cover"><img src={project.image} alt={`${project.title} screenshot`} /><figcaption>Project screenshot</figcaption></figure>}
+        <div className="portfolio-container case-study__hero-inner">
+          <AppLink href="/projects" navigate={navigate} className="back-link">All projects</AppLink>
+          <p className="eyebrow">{project.categoryLabel}</p>
+          <h1>{project.title}</h1>
+          {project.subtitle && <p className="case-study__subtitle">{project.subtitle}</p>}
+          {project.organization && <p className="case-study__organization">{project.organization}</p>}
+          {project.technologies.length > 0 && <p className="case-study__stack"><span>Built with</span> {project.technologies.slice(0, 5).join(' · ')}</p>}
+        </div>
       </header>
-      <div className="case-study__content">
+      {project.image && !isEmailProject && <figure className="case-study__cover portfolio-container" id="case-cover"><img src={project.image} alt={`${project.title} screenshot`} width="1366" height="768" /></figure>}
+      <div className="portfolio-container case-study__content">
         {isArchive && <>
-          <section><h2>Overview</h2><p className="case-study__lead">{project.overview}</p></section>
-          <section className="case-study__two-col"><div><h2>Context</h2><p>{project.context}</p></div><div><h2>Problem</h2><p>{project.problem}</p></div></section>
-          <section><h2>Approach</h2><p>{project.approach}</p></section>
-          <section><h2>Architecture</h2><ol className="architecture-list">{project.architecture.map((item, index) => <li key={item}><span>0{index + 1}</span>{item}</li>)}</ol></section>
-          <section><h2>Features</h2><ul className="simple-list">{project.responsibilities.map((item) => <li key={item}>{item}</li>)}</ul></section>
-          <section className="case-study__two-col"><div><h2>Challenges</h2><ul className="simple-list">{project.challenges.map((item) => <li key={item}>{item}</li>)}</ul></div><div><h2>What I Learned</h2><p>{project.learning}</p></div></section>
-          <section><h2>Gallery</h2><div className="case-gallery">{project.gallery.map((image) => <figure key={image}><img src={image} alt="Document archive user dashboard" /><figcaption>User dashboard</figcaption></figure>)}</div></section>
+          <section><h2>What it does</h2><p className="case-study__lead">{project.overview}</p></section>
+          <section><h2>What needed to change</h2><p>{project.problem}</p></section>
+          <section><h2>How I built it</h2><p>{project.approach}</p></section>
+          <section>          <h2>Under the hood</h2><ol className="architecture-list">{project.architecture.map((item) => <li key={item}>{item}</li>)}</ol></section>
+          <section><h2>What it handles</h2><ul className="simple-list">{project.responsibilities.map((item) => <li key={item}>{item}</li>)}</ul></section>
+          <section><h2>What I learned</h2><p>{project.learning}</p></section>
+          <div className="case-gallery">{project.gallery.map((image) => <figure key={image}><img src={image} alt="Document archive user dashboard" /><figcaption>User dashboard</figcaption></figure>)}</div>
         </>}
         {isAiProject && <>
           <section><h2>Overview</h2><p className="case-study__lead">{project.overview}</p></section>
@@ -561,7 +526,7 @@ function ProjectDetailPage({ project, navigate }) {
           <section><h2>What I focused on</h2><ul className="simple-list">{project.responsibilities.map((item) => <li key={item}>{item}</li>)}</ul></section>
           {(project.challenges?.length > 0 || project.learning) && <section className="case-study__two-col">{project.challenges?.length > 0 && <div><h2>Challenges</h2><ul className="simple-list">{project.challenges.map((item) => <li key={item}>{item}</li>)}</ul></div>}{project.learning && <div><h2>What I learned</h2><p>{project.learning}</p></div>}</section>}
         </>}
-        {(project.github || project.live) && <section className="case-study__links"><h2>Links</h2>{project.github && <a href={project.github} target="_blank" rel="noreferrer" className="text-link">GitHub</a>}{project.live && <a href={project.live} target="_blank" rel="noreferrer" className="text-link">Live site</a>}</section>}
+        {(project.github || project.live) && <section className="case-study__links"><h2>Project links</h2>{project.github && <a href={project.github} target="_blank" rel="noreferrer" className="text-link">View the source on GitHub</a>}{project.live && <a href={project.live} target="_blank" rel="noreferrer" className="text-link">Open the live project</a>}</section>}
       </div>
     </main>
   );
@@ -569,61 +534,66 @@ function ProjectDetailPage({ project, navigate }) {
 
 function AboutPage() {
   return (
-    <main className="page-content portfolio-container">
-      <PageHeading eyebrow="About" title="I’m interested in how technology fits together." />
-      <div className="about-layout">
-        <div className="editorial-copy">
-          <p>I&apos;m Gilang Riski Permana, a final-year Information Systems student at Universitas Indraprasta PGRI.</p>
-          <p>I started by working on web applications, but over time I became more interested in what happens outside the interface too — databases, APIs, deployment, servers, email systems, backups, and how technology supports actual work.</p>
-          <p>Most of my learning comes from building things, getting stuck, fixing problems, and then understanding why the solution worked.</p>
-          <p>Right now I&apos;m focusing on improving my programming fundamentals, backend development, system design, AI integration, and infrastructure knowledge.</p>
-          <p className="editorial-copy__closing">Still learning. Still building.</p>
+    <main className="page-content">
+      <PageHeading eyebrow="About" title="A bit about how I work." />
+      <div className="portfolio-container page-content__body">
+        <div className="about-layout">
+          <div className="editorial-copy">
+            <p>I&apos;m Gilang Riski Permana, an Information Systems student at Universitas Indraprasta PGRI.</p>
+            <p>I started with web development, then got curious about what happens behind the screen: APIs, databases, deployment, servers, and the systems people rely on at work.</p>
+            <p>Most of what I know comes from building things, getting stuck, and figuring out why a solution works. I&apos;m still strengthening my programming fundamentals and learning more about backend systems and infrastructure.</p>
+          </div>
+          <aside className="about-focus">
+            <img className="about-focus__portrait" src={profilePhoto} alt="Gilang Riski Permana" width="1024" height="1536" loading="lazy" decoding="async" />
+            <div><p className="eyebrow">Currently learning</p><strong>Backend development and how to keep the parts of a system working well together.</strong></div>
+          </aside>
         </div>
-        <aside className="about-focus">
-          <img className="about-focus__portrait" src={profilePhoto} alt="Gilang Riski Permana" loading="lazy" decoding="async" />
-          <div><p className="eyebrow">Current focus</p><strong>Backend development, system design, and understanding how each part fits together.</strong></div>
-        </aside>
       </div>
-      <section className="interests-section"><p className="eyebrow">What keeps me curious</p><div className="interest-list">{['Software Development', 'Backend Systems', 'Artificial Intelligence', 'Infrastructure', 'System Design', 'Music & Technology'].map((interest, index) => <div key={interest}><span>0{index + 1}</span>{interest}</div>)}</div></section>
     </main>
   );
 }
 
 function StackPage() {
   return (
-    <main className="page-content portfolio-container">
-      <PageHeading eyebrow="Stack" title="Tools I’ve worked with." description="Technologies I’ve used across personal projects, university work, experiments, and practical technical work. These labels describe experience, not expertise levels." />
-      {stackGroups.map((category) => <section className="stack-section" key={category.label}><div className="section-heading-row"><h2>{category.label}</h2></div><div className="tech-grid">{category.names.map((name) => <TechCard key={name} technology={getStackTechnology(name)} />)}</div></section>)}
-      <p className="stack-note">Gemini API: I use Google Gemini through its API; I didn&apos;t develop or train the model.</p>
+    <main className="page-content">
+      <PageHeading eyebrow="Stack" title="Tools I’ve used along the way." description="A selection of tools from projects, coursework, and hands-on work. I’m still learning, and some are more familiar than others." />
+      <div className="portfolio-container page-content__body">
+        {stackGroups.map((category) => <section className="stack-section" key={category.label}><div className="section-heading-row"><h2>{category.label}</h2></div><div className="tech-grid">{category.names.map((name) => <TechCard key={name} technology={getStackTechnology(name)} />)}</div></section>)}
+        <p className="stack-note">Gemini API: I use Google Gemini through its API; I didn&apos;t develop or train the model.</p>
+      </div>
     </main>
   );
 }
 
 function ExperiencePage() {
   return (
-    <main className="page-content portfolio-container">
-      <PageHeading eyebrow="Experience" title="Some of my work happens outside the code editor." description="I’ve also worked with infrastructure, email systems, troubleshooting, backup planning, and the technical side of day-to-day business operations." />
-      <ol className="experience-list">{experience.map((item, index) => <li key={item.title}><span className="experience-list__number">0{index + 1}</span><div><h2>{item.title}</h2><p>{item.detail}</p></div><span className="experience-list__line" /></li>)}</ol>
+    <main className="page-content">
+      <PageHeading eyebrow="Experience" title="Work beyond the code." description="A little of what I’ve done in IT, alongside the software projects I’ve worked on." />
+      <div className="portfolio-container page-content__body">
+        <ol className="experience-list">{experience.map((item, index) => <li key={item.title} data-reveal><span className="experience-list__number">0{index + 1}</span><div><p className="experience-list__organization">{item.organization}</p><h2>{item.title}</h2><p>{item.detail}</p></div><span className="experience-list__line" /></li>)}</ol>
+      </div>
     </main>
   );
 }
 
 function ContactPage() {
   const links = [
-    { label: 'Email', detail: 'Send me a message', href: 'mailto:gilangriskik@gmail.com', value: 'gilangriskik@gmail.com', icon: { name: 'Gmail', slug: 'gmail', color: 'EA4335' }, external: false },
-    { label: 'LinkedIn', detail: 'Connect with me', href: 'https://www.linkedin.com/in/gilang-riski-permana', value: 'Gilang Riski Permana', icon: { name: 'LinkedIn', slug: 'linkedin', color: '0A66C2' }, external: true },
-    { label: 'GitHub', detail: 'See what I’m building', href: 'https://github.com/gilsngprmns', value: 'github.com/gilsngprmns', icon: { name: 'GitHub', slug: 'github', color: '181717' }, external: true },
+    { label: 'Email', detail: 'The best way to reach me', href: 'mailto:gilangriskik@gmail.com', value: 'gilangriskik@gmail.com', external: false },
+    { label: 'LinkedIn', detail: 'My professional profile', href: 'https://www.linkedin.com/in/gilang-riski-permana', value: 'Gilang Riski Permana', external: true },
+    { label: 'GitHub', detail: 'Code and current projects', href: 'https://github.com/gilsngprmns', value: 'github.com/gilsngprmns', external: true },
   ];
   return (
-    <main className="page-content portfolio-container contact-page">
-      <PageHeading eyebrow="Contact" title="Let’s talk." description="If you want to talk about technology, a project, an internship, or an opportunity to work together, feel free to reach out." />
-      <div className="contact-list">{links.map((link) => <a key={link.label} href={link.href} target={link.external ? '_blank' : undefined} rel={link.external ? 'noreferrer' : undefined}><div className="contact-list__label"><TechLogo technology={link.icon} /><span className="contact-list__label-copy">{link.label}<small>{link.detail}</small></span></div><span className="contact-list__value">{link.value}</span></a>)}</div>
+    <main className="page-content contact-page">
+      <PageHeading eyebrow="Contact" title="Let’s talk about what you’re building." description="I’m open to internships, collaborations, and practical software projects. A short email is a good place to start." />
+      <div className="portfolio-container page-content__body">
+        <div className="contact-list">{links.map((link) => <a key={link.label} href={link.href} target={link.external ? '_blank' : undefined} rel={link.external ? 'noreferrer' : undefined}><div className="contact-list__label"><span className="contact-list__label-copy">{link.label}<small>{link.detail}</small></span></div><span className="contact-list__value">{link.value}</span></a>)}</div>
+      </div>
     </main>
   );
 }
 
 function NotFoundPage({ navigate }) {
-  return <main className="page-content portfolio-container"><PageHeading eyebrow="404" title="This page isn’t here." description="The address may have changed, or the page may not exist." /><AppLink href="/" navigate={navigate} className="text-link">Back home</AppLink></main>;
+  return <main className="page-content"><PageHeading eyebrow="404" title="This page isn’t here." description="The address may have changed, or the page may not exist." /><div className="portfolio-container page-content__body"><AppLink href="/" navigate={navigate} className="text-link">Back home</AppLink></div></main>;
 }
 
 function PageContent({ path, navigate }) {
@@ -659,7 +629,22 @@ export default function PortfolioApp() {
   }, []);
 
   useEffect(() => {
-    document.title = path === '/' ? 'Gilang Riski Permana — Portfolio' : `${path.split('/').filter(Boolean).at(-1)?.replaceAll('-', ' ') || 'Portfolio'} — Gilang Riski Permana`;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return undefined;
+    document.documentElement.classList.add('motion-ready');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -36px 0px' });
+    document.querySelectorAll('[data-reveal]').forEach((element) => observer.observe(element));
+    return () => observer.disconnect();
+  }, [path]);
+
+  useEffect(() => {
+    document.title = path === '/' ? 'Gilang Riski Permana | Portfolio' : `${path.split('/').filter(Boolean).at(-1)?.replaceAll('-', ' ') || 'Portfolio'} | Gilang Riski Permana`;
   }, [path]);
 
   const navigate = (href) => {
@@ -678,11 +663,15 @@ export default function PortfolioApp() {
     <div className="portfolio-site">
       <header className="site-nav">
         <div className="portfolio-container site-nav__inner">
-          <nav className={`site-nav__links${mobileMenuOpen ? ' is-open' : ''}`} aria-label="Main navigation">
-            {navigation.map((item) => <AppLink key={item.href} href={item.href} navigate={navigate} className={`site-nav__link${path === item.href || (item.href === '/projects' && path.startsWith('/projects/')) ? ' is-active' : ''}`}>{item.label}</AppLink>)}
+          <AppLink href="/" navigate={navigate} className="site-nav__brand" aria-label="Gilang Riski Permana, home">GP<span aria-hidden="true">.</span></AppLink>
+          <nav id="main-navigation" className={`site-nav__links${mobileMenuOpen ? ' is-open' : ''}`} aria-label="Main navigation">
+            {navigation.map((item) => {
+              const isActive = path === item.href || (item.href === '/projects' && path.startsWith('/projects/'));
+              return <AppLink key={item.href} href={item.href} navigate={navigate} className={`site-nav__link${isActive ? ' is-active' : ''}`} aria-current={isActive ? 'page' : undefined}>{item.label}</AppLink>;
+            })}
           </nav>
           <AppLink href="/contact" navigate={navigate} className="site-nav__cta">Let&apos;s Talk</AppLink>
-          <button type="button" className={`site-nav__menu${mobileMenuOpen ? ' is-open' : ''}`} aria-label={mobileMenuOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={mobileMenuOpen} onClick={() => setMobileMenuOpen((open) => !open)}><span /><span /></button>
+          <button type="button" className={`site-nav__menu${mobileMenuOpen ? ' is-open' : ''}`} aria-label={mobileMenuOpen ? 'Close navigation' : 'Open navigation'} aria-controls="main-navigation" aria-expanded={mobileMenuOpen} onClick={() => setMobileMenuOpen((open) => !open)}><span /><span /></button>
         </div>
       </header>
       <div key={path} className="route-view"><PageContent path={path} navigate={navigate} /></div>
@@ -690,7 +679,7 @@ export default function PortfolioApp() {
         <div className="portfolio-container site-footer__main">
           <div className="site-footer__identity">
             <strong>Gilang Riski Permana</strong>
-            <p>Information Systems · Developer · IT</p>
+            <p>Information Systems student.</p>
             <span>Jakarta, Indonesia</span>
           </div>
           <nav className="site-footer__nav" aria-label="Footer navigation">
@@ -701,14 +690,14 @@ export default function PortfolioApp() {
           </nav>
           <div className="site-footer__connect">
             <p className="site-footer__label">Get in touch</p>
-            <a className="site-footer__email" href="mailto:gilangriskik@gmail.com"><TechLogo technology={{ name: 'Gmail', slug: 'gmail', color: '000000' }} /><span>gilangriskik@gmail.com</span></a>
+            <a className="site-footer__email" href="mailto:gilangriskik@gmail.com"><span>gilangriskik@gmail.com</span></a>
             <div className="site-footer__social">
-              <a href="https://www.linkedin.com/in/gilang-riski-permana" target="_blank" rel="noreferrer"><TechLogo technology={{ name: 'LinkedIn', slug: 'linkedin', color: '000000' }} /><span>LinkedIn</span></a>
-              <a href="https://github.com/gilsngprmns" target="_blank" rel="noreferrer"><TechLogo technology={{ name: 'GitHub', slug: 'github', color: '000000' }} /><span>GitHub</span></a>
+              <a href="https://www.linkedin.com/in/gilang-riski-permana" target="_blank" rel="noreferrer"><span>LinkedIn</span></a>
+              <a href="https://github.com/gilsngprmns" target="_blank" rel="noreferrer"><span>GitHub</span></a>
             </div>
           </div>
         </div>
-        <div className="portfolio-container site-footer__bottom"><span>Built while learning.</span><span>© {new Date().getFullYear()}</span></div>
+        <div className="portfolio-container site-footer__bottom"><span>© {new Date().getFullYear()} Gilang Riski Permana</span></div>
       </footer>
     </div>
   );
